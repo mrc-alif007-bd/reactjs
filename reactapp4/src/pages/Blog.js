@@ -24,13 +24,13 @@ function Blog() {
             <tr>
                 <th>ID</th>
                 <th>Title</th>
-                <th>Ditails</th> 
+                <th>details</th> 
             </tr>
             {blog.map((blo)=>(
                 <tr>
                     <td>{blo.id}</td>
                     <td>{blo.title}</td>
-                    <td>{blo.ditails}</td>
+                    <td>{blo.details}</td>
                 </tr>
 
             ))}

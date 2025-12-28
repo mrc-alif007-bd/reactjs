@@ -33,20 +33,21 @@ function NavBar() {
           
           <div className="nav-item dropdown">
             
-            <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</Link>
+            <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</Link>
             <div className="dropdown-menu m-0">
               
-              <Link to="/detail" className="dropdown-item">Blog Detail</Link>
-              <Link to="/team" className="dropdown-item">The Team</Link>
-              <Link to="/testimonial" className="dropdown-item">Testimonial</Link>
-              <Link to="/appointment" className="dropdown-item">Appointment</Link>
-              <Link to="/search" className="dropdown-item">Search</Link>
+              <NavLink to ="/blog"className={({isActive})=>(isActive ? "dropdown-item" : "nav-item dropdown-item")}>
+            All Blog
+          </NavLink>
+              <NavLink to ="/blog/new"className={({isActive})=>(isActive ? "dropdown-item" : "nav-item dropdown-item")}>
+            New Blog
+          </NavLink>
+              <NavLink to ="/blog/new1"className={({isActive})=>(isActive ? "dropdown-item" : "nav-item dropdown-item")}>
+            New Blog 1
+          </NavLink>
+                          
             </div>
           </div>
-
-          <NavLink to ="/blog"className={({isActive})=>(isActive ? "active nav-item nav-link" : "nav-item nav-link")}>
-            Blog
-          </NavLink>
           <NavLink to ="/contact"className={({isActive})=>(isActive ? "active nav-item nav-link" : "nav-item nav-link")}>
             Contact
           </NavLink>
